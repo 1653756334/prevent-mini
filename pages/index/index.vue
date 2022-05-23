@@ -24,7 +24,7 @@
 		</view>
 		<view class="news">
 			<view class="newsTitle">
-				<view class="bold">防疫要闻</view>
+				<view class="bold">防贫要闻</view>
 				<view class="">查看全部</view>
 			</view>
 			<view class="newsContent">
@@ -79,7 +79,23 @@
 				{
 					title: "扫一扫",
 					imgUrl: "../../static/service/scan.png"
-				}
+				},
+				{
+					title: "教育中心",
+					imgUrl: "../../static/service/education.png"
+				},
+				{
+					title: "医疗中心",
+					imgUrl: "../../static/service/medical.png"
+				},
+				{
+					title: "就业帮扶",
+					imgUrl: "../../static/service/employment.png"
+				},
+				{
+					title: "便民通道",
+					imgUrl: "../../static/service/easy.png"
+				},
 			]
 			let newsDtail = reactive([])
 			
@@ -129,7 +145,7 @@
 
 	.services {
 		margin-top: 10px;
-		height: 285px;
+		// height: 285px;
 		background-color: #fff;
 
 		.disc {
