@@ -1,5 +1,5 @@
 <template>
-	<view class="content">
+	<view class="employment">
 		<view class="topBar">
 			<image class="topIcon" src="../../static/home.png"></image>
 			<view class="title">
@@ -10,24 +10,21 @@
 			<image src="../../static/banner.jpg"></image>
 		</view>
 		<view class="services">
-			<view class="disc">热门服务</view>
+			<view class="disc">就业帮扶</view>
 			<view class="serviceWrap">
-				<view class="item" v-for="item in serviceItems" :key="item.imgUrl" >
-					<navigator :url="item.goto">
-						<view class="imgOuter">
+				<view class="item" v-for="item in serviceItems" :key="item.imgUrl">
+					<view class="imgOuter">
 						<image :src="item.imgUrl"></image>
 					</view>
 					<view class="serviceTitle">
 						{{item.title}}
 					</view>
-					</navigator>
-					
 				</view>
 			</view>
 		</view>
 		<view class="news">
 			<view class="newsTitle">
-				<view class="bold">防贫要闻</view>
+				<view class="bold">就业要闻</view>
 				<view class="">查看全部</view>
 			</view>
 			<view class="newsContent">
@@ -42,6 +39,7 @@
 			</view>
 		</view>
 	</view>
+
 </template>
 
 <script>
@@ -50,85 +48,34 @@
 	} from 'vue'
 	export default {
 		setup() {
-			// 热门项目
 			let serviceItems = [
 				{
-					title: "防返贫检测",
-					imgUrl: "../../static/service/detection.png",
-					goto: "/pages/detection/detection"
+					title: "就业咨询",
+					imgUrl: "../../static/employment/employment (1).png",
 				},
 				{
-					title: "精准脱贫",
-					imgUrl: "../../static/service/ovp.png",
-					goto: "/pages/ovp/ovp"
+					title: "推荐就业",
+					imgUrl: "../../static/employment/employment (2).png",
 				},
 				{
-					title: "帮扶申请",
-					imgUrl: "../../static/service/apply.png",
-					goto: "/pages/apply/apply"
+					title: "就业产业需求摸排",
+					imgUrl: "../../static/employment/employment (3).png",
 				},
 				{
-					title: "帮扶查询",
-					imgUrl: "../../static/service/search.png",
-					goto: "/pages/search/search"
-				},
-				{
-					title: "防贫政策",
-					imgUrl: "../../static/service/policy.png",
-					goto: "/pages/policy/policy"
-				},
-				{
-					title: "防贫成果",
-					imgUrl: "../../static/service/results.png",
-					goto: "/pages/results/results"
-				},
-				{
-					title: "监督举报",
-					imgUrl: "../../static/service/report.png",
-					goto: "/pages/report/report"
-				},
-				{
-					title: "扫一扫",
-					imgUrl: "../../static/service/scan.png",
-					goto: "/pages/scan/scan"
-				},
-				{
-					title: "教育中心",
-					imgUrl: "../../static/service/education.png",
-					goto: "/pages/education/education"
-				},
-				{
-					title: "医疗中心",
-					imgUrl: "../../static/service/medical.png",
-					goto: "/pages/medical/medical"
-				},
-				{
-					title: "就业帮扶",
-					imgUrl: "../../static/service/employment.png",
-					goto: "/pages/employment/employment"
-				},
-				{
-					title: "便民通道",
-					imgUrl: "../../static/service/easy.png",
-					goto: "/pages/easy/easy"
+					title: "就业创业",
+					imgUrl: "../../static/employment/employment (1).png",
 				},
 			]
 			let newsDtail = reactive([])
-			
-			return {
-				serviceItems,
-				newsDtail,
-			};
+		return {
+			serviceItems,
+			newsDtail
+		}
 		}
 	}
 </script>
 
-<style lang="less" scoped="">
-	.content {
-		box-sizing: border-box;
-		background-color: #f8f8f8;
-	}
-
+<style lang="scss" scoped>
 	.topBar {
 		position: relative;
 		width: 100vw;
@@ -158,40 +105,37 @@
 			height: 175px;
 		}
 	}
-
 	.services {
 		margin-top: 10px;
 		// height: 285px;
 		background-color: #fff;
-
+	
 		.disc {
 			height: 45px;
 			text-align: center;
 			line-height: 45px;
 			border-bottom: 1px solid #f3f3f3;
-
+	
 			&::before {
 				content: "—";
 				margin-right: 5px;
 			}
-
+	
 			&::after {
 				content: "—";
 				margin-left: 5px;
 			}
 		}
-
+	
 		.serviceWrap {
 			margin-top: 18px;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-
+	
 			.item {
-				width: 23%;
-				height: 93px;
-
-
+				width: 33.3%;
+				height: 100px;
 				.imgOuter {
 					margin: 0 auto;
 					width: 60px;
@@ -201,29 +145,24 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-
 					image {
-						width: 27px;
-						height: 27px;
+						width: 32px;
+						height: 32px;
 					}
 				}
-
 				.serviceTitle {
 					margin-top: 5px;
 					font-size: 12px;
 					text-align: center;
 				}
-
-
 			}
 		}
 	}
-
 	.news {
 		margin-top: 15px;
 		background-color: #fff;
 		height: 100%;
-
+	
 		.newsTitle {
 			width: 100%;
 			height: 50px;
@@ -235,17 +174,17 @@
 			box-sizing: border-box;
 			color: #c3c3c6;
 			font-size: 14px;
-
+	
 			.bold {
 				font-weight: 700;
 				font-size: 18px;
 				color: black;
 			}
 		}
-
+	
 		.newsContent {
 			margin-top: 10px;
-
+	
 			.emptyNews {
 				text-align: center;
 			}

@@ -11,6 +11,12 @@
 			"style": {
 				"navigationBarTitleText": "关于"
 			}
+		},
+		{
+			"path": "pages/employment/employment",
+			"style": {
+				"navigationBarTitleText": "就业帮扶"
+			}
 		}
 	],
 	"globalStyle": {
