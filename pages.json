@@ -35,7 +35,7 @@
 				"pagePath": "pages/about/about",
 				"iconPath": "static/tabbar/me.png",
 				"selectedIconPath": "static/tabbar/me_selected.png",
-				"text": "关于"
+				"text": "我的"
 			}
 		]
 	}
