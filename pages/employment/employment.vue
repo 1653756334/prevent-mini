@@ -51,19 +51,19 @@
 			let serviceItems = [
 				{
 					title: "就业咨询",
-					imgUrl: "../../static/employment/employment (1).png",
+					imgUrl: "../../static/employment/employment1.png",
 				},
 				{
 					title: "推荐就业",
-					imgUrl: "../../static/employment/employment (2).png",
+					imgUrl: "../../static/employment/employment2.png",
 				},
 				{
 					title: "就业产业需求摸排",
-					imgUrl: "../../static/employment/employment (3).png",
+					imgUrl: "../../static/employment/employment3.png",
 				},
 				{
 					title: "就业创业",
-					imgUrl: "../../static/employment/employment (1).png",
+					imgUrl: "../../static/employment/employment4.png",
 				},
 			]
 			let newsDtail = reactive([])
