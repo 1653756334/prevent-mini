@@ -1,5 +1,5 @@
 <template>
-	<view class="about">
+	<view class="conbox">
 		<view class="topBar">
 			<image class="topIcon" src="../../static/home.png"></image>
 			<view class="title">
@@ -7,17 +7,14 @@
 			</view>
 		</view>
 	</view>
+	
 </template>
 
 <script>
-	export default {
-		setup() {
-			
-		},
-	}
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
+.conbox{
 	.topBar {
 		position: relative;
 		width: 100vw;
@@ -38,4 +35,6 @@
 			transform: translateY(-50%);
 		}
 	}
+	
+}
 </style>
